@@ -1,0 +1,25 @@
+
+server:
+    port: 8099
+
+logging.level:
+        tk.mybatis: DEBUG
+spring:
+    aop:
+      proxy-target-class: true
+    application:
+        name: rpc-native-shell
+    jackson:
+        date-format: yyyy-MM-dd HH:mm:ss
+        time-zone: GMT+8
+        default-property-inclusion: non_null
+
+
+swagger:
+    basepackage: com.mvc.shell
+    service:
+        name: MVC RPC Shell
+        description: Only For MVC Applications
+
+cors.allowedOrigin: '*'
+
